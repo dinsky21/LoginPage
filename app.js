@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 //session
 app.use(
   session({
-    secret: 'mySecret', //存放sessionID
+    secret: 'mySecret', //存放sessionID，通常是隨機亂碼
     name: 'user', // optional，存放在cookie的key
     saveUninitialized: false,
     resave: true,
